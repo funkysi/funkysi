@@ -1,0 +1,79 @@
+html{
+  background: #fff;
+ 
+}
+
+body{
+	width:960px;
+	margin: 0 auto;
+	position:relative;
+	background:#effaef;
+	padding-bottom:15px;
+	border-top:1px solid #ccc;
+	border-left:1px solid #888;
+	border-right:1px solid #bbb;
+	border-bottom:1px solid #555;
+	color: #000;
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+h1 {
+  font-size:40.0pt;
+  padding-top: 15px;
+	padding-bottom: 15px; 
+	text-align:center;
+	font-weight:bold;
+}
+h2 {
+  font-size:20.0pt;
+  padding-bottom: 15px;
+  padding-top:5px;
+}
+h3 {
+  font-size:16.0pt;
+  padding-top:15px;
+  
+}
+strong{
+	font-weight:bold;
+}
+em{
+	font-style:italic;
+}
+
+/* Links */
+a {
+  color: #000000;
+  text-decoration:none;
+  font-weight:bold;
+}
+a:hover{
+  text-decoration:underline;
+}
+a[href^="mailto:"] {
+  background: url(/imgs/email.png) no-repeat 99% center;
+  padding-right: 20px;
+}
+.bearvid, .baptismvid{
+	text-align:center;
+}
+p{
+	padding-right:10px;
+	padding-left:10px;
+	padding-bottom: 15px; 
+}
+ul{
+	padding-right:10px;
+	padding-left:10px;
+	padding-bottom: 15px; 
+}
+li{
+padding-bottom: 5px; 
+}
+li.title{
+	text-decoration:underline;
+}
+p.img{
+text-align:center;
+}

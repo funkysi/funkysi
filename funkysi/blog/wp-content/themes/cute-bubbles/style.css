@@ -1,0 +1,775 @@
+/*
+Theme Name: Cute Bubbles
+Theme URI: http://point47.com/journal/2009/01/cute-bubbles-wordpress-theme/
+Description: This theme is inspired by the tutorial from Abduzeedo weblog.
+Version: 1.1
+Author: Gitlan Sorin
+Author URI: http://point47.com/journal/
+Tags: black, dark, fixed-width, two-columns, right-sidebar
+
+    This theme is inspired by the tutorial from Abduzeedo weblog. Thanks for a great tutorial!
+    LINK: http://abduzeedo.com/awesome-digital-bokeh-effect-photoshop
+    
+    IMPORTANT NOTES!
+    * IE 6 is now supprted (since version 1.0)!
+      It uses the script that you can find more about here: http://www.dillerdesign.com/experiment/DD_belatedPNG/
+    * the post title must not be longer than the actual title grafic (one line of text)
+    
+    The CSS, XHTML and design is released under GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+	
+	
+	**** UPDATES  *****
+	
+	1.1     - Updated the dinamic sidebar CSS. Now should not be any problems.
+	
+	1.0		- IE 6 support introduced
+            - the Sidebar html and css were modified (it uses the default wordpress tags)
+		    - Updated header graphic
+		    - Updated some paddings and borders
+            
+	
+	0.9.6   - first official version release (without IE6 support)
+	
+	
+*/
+.navigation{
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0px 0px 10px 20px;
+}
+
+    .alignleft {
+        display: inline;
+        float: left;
+        width: 45%;
+        color: white;
+        text-decoration: none;
+    }
+    .alignleft a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    .alignright {
+        display: inline;
+        float: right;
+        width: 45%;
+        color: white;
+        text-decoration: none;
+        text-align: right;
+        margin: 0px 30px 0px 0px;
+    }
+    .alignright a{
+        color: white;
+        text-decoration: none; 
+    }
+    
+    
+    .aligncenter {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	
+	
+	.wp-caption {
+		border: 1px solid #ddd;
+		text-align: center;
+		background-color: #f3f3f3;
+		padding-top: 4px;
+		margin: 10px;
+		-moz-border-radius: 3px;
+		-khtml-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+	}
+	
+	.wp-caption img {
+		margin: 0;
+		padding: 0;
+		border: 0 none;
+	}
+	
+	.wp-caption-dd {
+		font-size: 11px;
+		line-height: 17px;
+		padding: 0 4px 5px;
+		margin: 0;
+	}
+
+
+    
+    
+   
+
+/* plz reset the margins and anchors :D ty  */ 
+h1, h2, h3, h4, h5, ol, ul, li, input, form, textfield {
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+
+/* ---------------- */
+
+/* for the footer settings */
+html{
+    height: 100%;
+}
+
+/* the super duper big daddy body setter */ 
+body {
+    margin: 0px auto;
+    font-family: Tahoma, Arial, "Trebuchet MS", Verdana, sans-serif;
+    font-size: 62.5%;
+    color: #333333;
+    background: url(images/background.png) repeat-x top #1c1c49;
+    
+    /* footer settings */
+    height: 100%;
+    /* ------------------ */
+}
+
+/* the top background image loader */ 
+#top_background
+{
+    position:absolute;
+    top: 0px;
+    width: 100%;
+    height: 533px;
+    background: url(images/top_background.jpg) no-repeat top; 
+}
+
+/* the real big page container */ 
+#container{
+    position:relative;
+    width: 100%;
+    font-size: 11px;
+    margin: 0px auto;
+    z-index: 10;
+    /* footer settings */ 
+    padding-bottom: 0em;
+}
+
+    /* some header styles */ 
+    #headerContent{
+        position:relative; 
+        width: 960px;
+        margin: 80px 0px 30px 30px; 
+    }
+    #headerContent h1{
+        font-weight: normal;
+        color: white;
+        font-size: 2.6em; 
+        font-family: Georgia, serif; 
+    }
+    
+    #headerContent h1 a{
+        font-weight: normal;
+        color: pink; 
+    }
+    
+    #headerContent h1 a:hover{
+        font-weight: normal;
+        color: pink; 
+    }
+    
+    #headerContent h5{
+        font-weight: normal;
+        font-size: 1.0em; 
+        color: white; 
+    }
+    
+    #searchSheat{
+        position:absolute;
+        right:0;
+        bottom:-24px;
+        margin: 0px 26px 0px 0px;
+        width:260px;
+        height:55px;
+        z-index: 100;
+    }
+    #searchSheat input{
+        display: inline;
+        position: relative;
+        float: left;
+        width:240px;
+        height:35px;
+        border:0px;
+        color:#fff;
+        font-size: 1.1em;
+        padding: 20px 0px 0px 20px;
+        background: url(images/search_bg.png) no-repeat center;
+        z-index: 100;
+    }
+    
+    
+/* the full page container */ 
+#pageContainer{
+    position:relative;
+    width: 990px;
+    font-size: 11px;
+    margin: 0px auto; 
+    z-index: 200;
+}
+
+
+/* set the page top white shadow border */
+#pageContainerTOP{
+    position:relative;
+    width: 990px;
+    height: 30px;
+    margin: 10px 0px 0px 0px;
+    background: url(images/top_black_white.png) no-repeat top;
+}
+#pageContainerCENTER{
+    display: inline;
+    position:relative;
+    float: left; 
+    width: 990px;
+    font-size: 11px;
+    background: url(images/midde_black_white.png) repeat-y center;
+}
+    
+    /* set the default inner page colors and margins */
+    #pageStyler{
+        display: inline;
+       position:relative;
+       width: 960px;
+       float: left; 
+       margin: 0px 0px 0px 30px;
+       color: white; 
+    }
+    
+    
+    
+     /* page specific styles   ---------------------------------------------------- */
+     #theREALleft{
+        display: inline;
+        float: left;
+        width: 650px;
+        margin: 0px 0px 0px 0px;
+     }
+     
+        .pagetitle {
+            float: left;
+            display: inline;
+            width: 94%;
+            margin: 0px 0px 20px 0px;
+            padding: 0px 0px 0px 20px;
+            font-weight: normal;
+        }
+         
+         
+         .titleAndMeta{
+            display: inline;
+            float: left;
+            width: 665px;
+            height: 80px;
+            background: url(images/h1_bg.jpg) repeat-x top #151515;
+         }
+         .titleAndMeta h2{
+            display: inline;
+            float: left;
+            width: 630px;
+            margin: 26px 0px 0px 32px;
+            font-weight: normal;
+            font-size: 1.5em;
+            font-family: Georgia, serif;   
+         }
+         .titleAndMeta h2 a{
+            color:#ffffff;
+            text-decoration: none;
+         }
+         .titleAndMeta h2 a:hover{
+            color:pink;
+            text-decoration: none;
+         } 
+         
+         .metaDate{
+            display: inline;
+            float: left;
+            width: 200px;
+            margin: 10px 0px 0px 26px;
+            font-size: 0.9em;
+            color: #a59797; 
+         }
+         .metaCommentsEdit{
+            display: inline;
+            float: right;
+            width: 400px; 
+            text-align: right;
+            margin: 10px 20px 0px 0px;
+            font-size: 0.9em; 
+            color: #a59797;
+         }
+         .metaCommentsEdit a{
+            color: pink;
+            text-decoration: none; 
+         }
+         .metaCommentsEdit a:hover{
+            color: #a59797;
+            text-decoration: none;  
+         }
+     
+     
+     .realPostItem{
+        display: inline;
+        float: left;
+        width: 610px;
+        margin: 10px 0px 20px 20px;
+        padding: 10px 10px 10px 10px;
+        background: url(images/item_bg.png) repeat-x top #151515;
+        color: #cdc3c3;
+        line-height: 1.5em;
+        border-top: 1px solid #272727; 
+        border-bottom: 1px solid #272727; 
+     }
+     
+     .realPostItem a{ 
+         color:#fff;
+         text-decoration: none;
+     }
+     .realPostItem a:hover{ 
+         color: pink;
+         text-decoration: none;
+     }
+     
+     .postmetadata{
+        display: inline;
+        float: left;
+        width: 610px;
+        margin: 0px 0px 20px 20px;
+        padding: 10px 10px 10px 10px;
+        background: url(images/item_bg.png) repeat-x top #151515;
+        border: 1px solid #313131;
+        color: #cdc3c3;
+        line-height: 1.5em;
+    }
+    
+    .postmetadata a{
+        color:#fff;
+        text-decoration: none;
+    }
+    
+    .postmetadata a:hover{
+        color:pink;
+        text-decoration: none;
+    }
+    
+    
+    .postmetadata_single{
+        display: inline;
+        float: left;
+        width: 610px;
+        margin: 0px 0px 20px 20px;
+        padding: 6px 10px 6px 10px;
+        color: #666;
+        line-height: 1.5em;
+    }
+    .postmetadata_single a{
+        color:#fff;
+        text-decoration: none;
+    }
+    
+    .postmetadata_single a:hover{
+        color:pink;
+        text-decoration: none;
+    }
+    
+    
+    .realPostItem code{
+		display:inline;
+		float:left;
+		width: 600px;
+		margin: 5px;
+    }
+    
+    
+   /* --------------------------------------------------------------------------------- 
+   
+        SIDEBAR things here
+   
+   --------------------------------------------------------------------------------- */  
+    
+    
+    
+     #theREALright{
+        display: inline;
+        float: right;
+        width: 240px;
+        margin: 16px 40px 0px 0px;
+     }
+     
+     .pagenav, .categories{
+        display: inline;
+        float: left;
+        width: 236px;
+        background: url(images/left_bg_.jpg) no-repeat top center #191818;
+        margin: 10px 0px 10px 0px;
+        border-top: 1px solid #272727; 
+     }
+     
+     .pagenav h5, .categories h5{
+        display: inline;
+        float: left;
+        width: 220px;
+        margin:16px 0px 5px 20px;
+        font-size: 1.5em;
+        font-weight: normal;
+        font-family: Georgia, serif; 
+     }
+     
+     .pagenav ul, .categories ul{
+        display: inline;
+        float: left;
+        width: 220px;
+        margin: 12px 0px 10px 12px;
+     }
+     
+     .pagenav ul li, .categories ul li{
+        display: inline;
+        float: left;
+        width: 220px;
+        border-bottom: 1px solid #272727;
+     }
+     
+     .pagenav ul li a, .categories ul li a{
+        display: inline;
+        float: left;
+        width: 220px;
+        text-decoration: none;
+        color: #cdc3c3;
+        padding: 6px 0px 7px 0px;
+     }
+     .pagenav ul li a:hover, .categories ul li a:hover{
+        text-decoration: none;
+        color: #f4f4f4;
+     }
+     
+     
+     /* --------------------------------------------------------------------------------- */ 
+     
+     
+     .linkcat{
+        display: inline;
+        float: left;
+        width: 236px;
+        border-top: 1px solid #272727;
+        background: url(images/left_bg_.jpg) no-repeat top center #191818;
+        margin: 10px 0px 10px 0px;
+     }
+     
+     .linkcat h2{
+        display: inline;
+        float: left;
+        width: 220px;
+        margin:16px 0px 5px 20px;
+        font-size: 1.6em;
+        font-weight: normal;
+        font-family: Georgia, serif; 
+     }
+     
+     .linkcat ul{
+        display: inline;
+        float: left;
+        width: 220px;
+        margin: 12px 0px 10px 12px;
+     }
+     
+     .linkcat ul li{
+        display: inline;
+        float: left;
+        width: 220px;
+        border-bottom: 1px solid #272727;
+     }
+     
+     .linkcat ul li a{
+        display: inline;
+        float: left;
+        width: 220px;
+        text-decoration: none;
+        color: #cdc3c3;
+        padding: 6px 0px 7px 0px;
+     }
+     .linkcat ul li a:hover{
+        text-decoration: none;
+        color: #f4f4f4;
+     }
+     
+     
+     /* --------------------------------------------------------------------------------- */ 
+     
+     
+     .widget{
+        display: inline;
+        float: left;
+        width: 236px;
+        border-top: 1px solid #272727;
+        background: url(images/left_bg_.jpg) no-repeat top center #191818;
+        margin: 10px 0px 10px 0px;
+     }
+     
+     .widget h2{
+        display: inline;
+        float: left;
+        width: 220px;
+        margin:16px 0px 5px 20px;
+        font-size: 1.6em;
+        font-weight: normal;
+        font-family: Georgia, serif; 
+     }
+     
+     .widget ul{
+        display: inline;
+        float: left;
+        width: 220px;
+        margin: 12px 0px 10px 12px;
+     }
+     
+     .widget ul li{
+        display: inline;
+        float: left;
+        width: 220px;
+        border-bottom: 1px solid #272727;
+     }
+     
+     .widget ul li a{
+        display: inline;
+        float: left;
+        width: 220px;
+        text-decoration: none;
+        color: #cdc3c3;
+        padding: 6px 0px 7px 0px;
+     }
+     .widget ul li a:hover{
+        text-decoration: none;
+        color: #f4f4f4;
+     }
+     
+    
+
+     /* --------------------------------------------------------------------------------- */
+    .widget_tag_cloud a{
+		float:left;
+		color: #cdc3c3;
+		padding: 3px;
+		margin: 3px;
+    } 
+     
+     
+	.widget_search{
+		padding: 20px 0px 20px 0px;
+	}
+	.widget_search input{
+		float:left;
+		border: 1px solid #f4f4f4;
+		padding: 2px;
+		margin: 0px 0px 0px 10px;
+	}
+	.widget_search label{
+		margin: 0px 0px 5px 10px;
+	}
+	
+	
+	#calendar{
+		display:inline;
+		clear:left;
+		
+	}
+	
+	#calendar_wrap{
+		display:inline;
+		float:left;
+		margin: 5px 0px 0px 30px;
+	}
+	#calendar_wrap a{
+		color: #cdc3c3;
+	}
+	
+		#wp-calendar #prev a, #wp-calendar #next a {
+			font-size: 9pt;
+			}
+		
+		#wp-calendar a {
+			text-decoration: none;
+			}
+		
+		#wp-calendar caption {
+			font: bold 1.3em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+			text-align: center;
+			}
+		
+		#wp-calendar th {
+			font-style: normal;
+			text-transform: capitalize;
+			}
+			
+			
+			/* Begin Calendar */
+		#wp-calendar {
+			empty-cells: show;
+			margin: 10px auto 0;
+			width: 155px;
+			}
+		
+		#wp-calendar #next a {
+			padding-right: 10px;
+			text-align: right;
+			}
+		
+		#wp-calendar #prev a {
+			padding-left: 10px;
+			text-align: left;
+			}
+		
+		#wp-calendar a {
+			display: block;
+			}
+		
+		#wp-calendar caption {
+			text-align: center;
+			width: 100%;
+			}
+		
+		#wp-calendar td {
+			padding: 3px 0;
+			text-align: center;
+			}
+		
+		#wp-calendar td.pad:hover { /* Doesn't work in IE */
+			background-color: #fff; }
+		/* End Calendar */
+
+
+
+
+/* set the bottom page white shadow border */ 
+#pageContainerBOTTOM{
+    display: inline;
+    position:relative;
+    float: left;
+    width: 990px;
+    height: 30px;
+    background: url(images/bottom_black_white.png) no-repeat top;
+}
+
+
+/* some footer styles */ 
+#footer{
+	display:inline;
+	float:left;
+    margin: 5px 0px 0px 0px;
+    width: 990px;
+    color:white;
+}
+#footerContent{
+    margin: 0px 0px 0px 40px;
+    width: 970px;
+    color:white;
+    font-size:0.9em;
+}
+#footerContent a{
+    color:pink;
+} 
+
+
+/* the bottom background image loader */ 
+#bottom_background{
+    position: relative;
+    margin-top: -20em;
+    display: inline;
+    width: 100%;
+    float:left;
+    height: 300px;
+    background: url(images/bottom_background.jpg) no-repeat top; 
+    z-index: 100;    
+}
+
+
+
+/** 
+Comments part
+ */
+
+ol.commentlist{
+    width: 590px;
+}
+
+ol.commentlist li{
+    float: left;
+    background: #312533;
+    border: 1px solid pink;
+    width: 590px;
+    color: pink;
+    font-size: 1.0em;
+    font-family: Tahoma;
+    padding: 10px;
+    margin: 10px 0px 10px 0px;;
+}
+ 
+/** 
+ the field styles adjustments
+ */
+#author{
+    background: #312533;
+    border: 1px solid pink;
+    width: 200px;
+    color: pink;
+    font-size: 1.0em;
+    font-family: Tahoma;
+    padding: 5px;
+}
+
+#email {
+    background: #312533;
+    border: 1px solid pink;
+    width: 200px;
+    color: pink;
+    font-size: 1.0em;
+    font-family: Tahoma;
+    padding: 5px;
+}
+
+#url {
+    background: #312533;
+    border: 1px solid pink;
+    width: 200px;
+    color: pink;
+    font-size: 1.0em;
+    font-family: Tahoma;
+    padding: 5px; 
+}
+
+#comment{
+    background: #312533;
+    border: 1px solid pink;
+    width: 590px;
+    color: pink;
+    font-size: 1.0em;
+    font-family: Tahoma;
+    padding: 10px;
+}
+
+
+
+
+/** 
+-- Start of personal quote: 
+----------------------------------
+
+*** DAMN there must be a easier way to write all this CSS rules!
+
+----------------------------------
+-- End of personal quote!
+ */
+
