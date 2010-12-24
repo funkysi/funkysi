@@ -1,0 +1,1433 @@
+<html>
+<head>
+<style>
+BODY, TD, B, LI, U, DIV, SPAN {
+	background-color: #ffffff;
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-size: 10px;
+}
+A {
+	color: #0066ff;
+	text-decoration: none;
+}
+A:visited {
+	color: #000099;
+	text-decoration: none;
+}
+A:active {
+	color: #26a0be;
+	text-decoration: none;
+}
+A:hover {
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #26a0be;
+}
+.barfill {
+	background-color: #96ef94;
+	border-left: 1px;
+	border-right: 1px;
+	border-top: 1px;
+	border-bottom: 1px;
+	border-color: #4c934a;
+	border-style: solid;
+	font-size: 10px;
+	height: 3px;
+	line-height: 4px;
+}
+.barempty {
+	font-size: 10px;
+	line-height: 4px;
+}
+.barleft {
+	background-color: #ff9696;
+	border-left: 1px;
+	border-right: 1px;
+	border-top: 1px;
+	border-bottom: 1px;
+	border-color: #4c934a;
+	border-style: solid;
+	font-size: 10px;
+	height: 3px;
+	line-height: 4px;
+}
+.barright {
+	background-color: #f8f8f8;
+	border-left: 0px;
+	border-right: 1px;
+	border-top: 1px;
+	border-bottom: 1px;
+	border-color: #4c934a;
+	border-style: solid;
+	font-size: 10px;
+	height: 3px;
+	line-height: 4px;
+}
+.title {
+	background-color: #007f9e;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 3px;
+	color: #ffffff;
+}
+.reportlink {
+	background-color: #ffffff;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	padding-left: 3px;
+}
+.subtitle {
+	background-color: #007f9e;
+	font-size: 12px;
+	font-weight: normal;
+	padding: 3px;
+	color: #ffffff;
+}
+.info {
+	background-color: #badfee;
+	font-size: 12px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+.keyentry {
+	font-size: 10px;
+	padding-left: 2px;
+	border-bottom: 1px dashed #bcbcbc;
+}
+.keyentrywe {
+	background-color: #f0f090;
+	font-size: 10px;
+	padding-left: 2px;
+	border-bottom: 1px dashed #bcbcbc;
+}
+.valueentry {
+	font-size: 10px;
+	padding-left: 2px;
+	color: #905d14;
+	border-bottom: 1px dashed #f6c074;
+}
+.credits {
+	font-size: 12px;
+	font-weight: bold;
+}
+.maintable {
+	border-style: solid;
+	border-color: #0b4b5b;
+	border-width: 1px;
+}
+</style>
+</head>
+<body><table border="0" cellpadding="0" cellspacing="0" class="maintable">
+<tr><td colspan="3" align="center" class="credits">Statistics generated with <a href="http://www.hping.org/visitors">VISITORS Web Log Analyzer</a> version 0.7
+</td></tr><tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="General information"></a>General information</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">Information about analyzed log files</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">Generated: Fri Dec 24 00:00:29 2010
+</td></tr>
+<tr><td align="left" colspan="3" class="info">Number of entries processed 72151</td></tr>
+<tr><td align="left" colspan="3" class="info">Number of invalid entries 2503</td></tr>
+<tr><td align="left" colspan="3" class="info">Processing time in seconds 28</td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="Generated reports"></a>Generated reports</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">Click on the report name you want to see</td></tr>
+<tr><td align="left" colspan="3" class="info">Number of reports generated 24</td></tr>
+<tr><td align="left" class="reportlink" colspan="3"><a href="#Unique visitors in each day">Unique visitors in each day</a></td></tr>
+<tr><td align="left" class="reportlink" colspan="3"><a href="#Unique visitors in each month">Unique visitors in each month</a></td></tr>
+<tr><td align="left" class="reportlink" colspan="3"><a href="#Unique visitors from Google in each day">Unique visitors from Google in each day</a></td></tr>
+<tr><td align="left" class="reportlink" colspan="3"><a href="#Unique visitors from Google in each month">Unique visitors from Google in each month</a></td></tr>
+<tr><td align="left" class="reportlink" colspan="3"><a href="#Pageviews per visit">Pageviews per visit</a></td></tr>
+<tr><td align="left" class="reportlink" colspan="3"><a href="#Weekday-Hour combined map">Weekday-Hour combined map</a></td></tr>
+<tr><td align="left" class="reportlink" colspan="3"><a href="#Month-Day combined map">Month-Day combined map</a></td></tr>
+<tr><td align="left" class="reportlink" colspan="3"><a href="#Requested pages">Requested pages</a></td></tr>
+<tr><td align="left" class="reportlink" colspan="3"><a href="#Requested images and CSS">Requested images and CSS</a></td></tr>
+<tr><td align="left" class="reportlink" colspan="3"><a href="#Referers">Referers</a></td></tr>
+<tr><td align="left" class="reportlink" colspan="3"><a href="#Referers by first time">Referers by first time</a></td></tr>
+<tr><td align="left" class="reportlink" colspan="3"><a href="#Robots and web spiders">Robots and web spiders</a></td></tr>
+<tr><td align="left" class="reportlink" colspan="3"><a href="#User agents">User agents</a></td></tr>
+<tr><td align="left" class="reportlink" colspan="3"><a href="#Operating Systems">Operating Systems</a></td></tr>
+<tr><td align="left" class="reportlink" colspan="3"><a href="#Browsers">Browsers</a></td></tr>
+<tr><td align="left" class="reportlink" colspan="3"><a href="#404 Errors">404 Errors</a></td></tr>
+<tr><td align="left" class="reportlink" colspan="3"><a href="#Domains">Domains</a></td></tr>
+<tr><td align="left" class="reportlink" colspan="3"><a href="#Googled pages">Googled pages</a></td></tr>
+<tr><td align="left" class="reportlink" colspan="3"><a href="#Adsensed pages">Adsensed pages</a></td></tr>
+<tr><td align="left" class="reportlink" colspan="3"><a href="#Google Keyphrases">Google Keyphrases</a></td></tr>
+<tr><td align="left" class="reportlink" colspan="3"><a href="#Google Keyphrases by first time">Google Keyphrases by first time</a></td></tr>
+<tr><td align="left" class="reportlink" colspan="3"><a href="#Google Human Language">Google Human Language</a></td></tr>
+<tr><td align="left" class="reportlink" colspan="3"><a href="#Weekday distribution">Weekday distribution</a></td></tr>
+<tr><td align="left" class="reportlink" colspan="3"><a href="#Hours distribution">Hours distribution</a></td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="Unique visitors in each day"></a>Unique visitors in each day</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">Multiple hits with the same IP, user agent and access day, are considered a single visit</td></tr>
+<tr><td align="left" colspan="3" class="info">Number of unique visitors 520</td></tr>
+<tr><td align="left" colspan="3" class="info">Different days in logfile 12</td></tr>
+<tr><td align="left" class="keyentrywe">12/Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">52 (10.0%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="83%">&nbsp;</td>
+<td align="center" class="barempty" width="17%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">13/Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">38 (7.3%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="61%">&nbsp;</td>
+<td align="center" class="barempty" width="39%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">14/Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">45 (8.7%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="72%">&nbsp;</td>
+<td align="center" class="barempty" width="28%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">15/Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">62 (11.9%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="100%">&nbsp;</td>
+<td align="center" class="barempty" width="0%"></td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">16/Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">48 (9.2%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="77%">&nbsp;</td>
+<td align="center" class="barempty" width="23%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">17/Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">37 (7.1%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="59%">&nbsp;</td>
+<td align="center" class="barempty" width="41%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentrywe">18/Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">41 (7.9%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="66%">&nbsp;</td>
+<td align="center" class="barempty" width="34%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentrywe">19/Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">38 (7.3%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="61%">&nbsp;</td>
+<td align="center" class="barempty" width="39%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">20/Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">43 (8.3%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="69%">&nbsp;</td>
+<td align="center" class="barempty" width="31%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">21/Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">42 (8.1%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="67%">&nbsp;</td>
+<td align="center" class="barempty" width="33%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">22/Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">35 (6.7%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="56%">&nbsp;</td>
+<td align="center" class="barempty" width="44%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">23/Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">39 (7.5%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="62%">&nbsp;</td>
+<td align="center" class="barempty" width="38%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="Unique visitors in each month"></a>Unique visitors in each month</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">Multiple hits with the same IP, user agent and access day, are considered a single visit</td></tr>
+<tr><td align="left" colspan="3" class="info">Number of unique visitors 520</td></tr>
+<tr><td align="left" colspan="3" class="info">Different months in logfile 1</td></tr>
+<tr><td align="left" class="keyentry">Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">520 (100.0%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="100%">&nbsp;</td>
+<td align="center" class="barempty" width="0%"></td></tr>
+</table>
+</td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="Unique visitors from Google in each day"></a>Unique visitors from Google in each day</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">The red part of the bar expresses the percentage of visits originated from Google</td></tr>
+<tr><td align="left" colspan="3" class="info">Number of unique visitors 520</td></tr>
+<tr><td align="left" colspan="3" class="info">Number of unique visitors from google 9</td></tr>
+<tr><td align="left" colspan="3" class="info">Different days in logfile 12</td></tr>
+<tr><td align="left" class="keyentrywe">12/Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">1 (1.9%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barleft" width="1%">&nbsp;</td>
+<td align="center" class="barright" width="99%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">13/Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">1 (2.6%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barleft" width="2%">&nbsp;</td>
+<td align="center" class="barright" width="98%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">14/Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">1 (2.2%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barleft" width="2%">&nbsp;</td>
+<td align="center" class="barright" width="98%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">15/Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">2 (3.2%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barleft" width="3%">&nbsp;</td>
+<td align="center" class="barright" width="97%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">16/Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">1 (2.1%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barleft" width="2%">&nbsp;</td>
+<td align="center" class="barright" width="98%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">17/Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">0 (0.0%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barleft" width="0%"></td>
+<td align="center" class="barright" width="100%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentrywe">18/Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">0 (0.0%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barleft" width="0%"></td>
+<td align="center" class="barright" width="100%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentrywe">19/Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">0 (0.0%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barleft" width="0%"></td>
+<td align="center" class="barright" width="100%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">20/Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">0 (0.0%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barleft" width="0%"></td>
+<td align="center" class="barright" width="100%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">21/Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">1 (2.4%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barleft" width="2%">&nbsp;</td>
+<td align="center" class="barright" width="98%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">22/Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">1 (2.9%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barleft" width="2%">&nbsp;</td>
+<td align="center" class="barright" width="98%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">23/Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">1 (2.6%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barleft" width="2%">&nbsp;</td>
+<td align="center" class="barright" width="98%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="Unique visitors from Google in each month"></a>Unique visitors from Google in each month</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">The red part of the bar expresses the percentage of visits originated from Google</td></tr>
+<tr><td align="left" colspan="3" class="info">Number of unique visitors 520</td></tr>
+<tr><td align="left" colspan="3" class="info">Number of unique visitors from google 9</td></tr>
+<tr><td align="left" colspan="3" class="info">Different months in logfile 1</td></tr>
+<tr><td align="left" class="keyentry">Dec/2010&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">9 (1.7%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barleft" width="1%">&nbsp;</td>
+<td align="center" class="barright" width="99%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="Weekday-Hour combined map"></a>Weekday-Hour combined map</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">Brighter means higher level of hits</td></tr>
+<tr><td align="left" colspan="3" class="info">Hour with max traffic starting at We 20:00 with hits 19</td></tr>
+<tr><td align="left" colspan="3" class="info">Hour with min traffic starting at Mo 04:00 with hits 0</td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td colspan="3" align="center"><table border="0" cellpadding="0" cellspacing="0"><tr><td class="valueentry">Mo</td><td style="background-color: #626C93;" title="11">&nbsp;</td>
+<td style="background-color: #3E445D;" title="7">&nbsp;</td>
+<td style="background-color: #747FAE;" title="13">&nbsp;</td>
+<td style="background-color: #1A1D28;" title="3">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #11131A;" title="2">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #596286;" title="10">&nbsp;</td>
+<td style="background-color: #2C3143;" title="5">&nbsp;</td>
+<td style="background-color: #2C3143;" title="5">&nbsp;</td>
+<td style="background-color: #11131A;" title="2">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #1A1D28;" title="3">&nbsp;</td>
+<td style="background-color: #1A1D28;" title="3">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #11131A;" title="2">&nbsp;</td>
+<td style="background-color: #11131A;" title="2">&nbsp;</td>
+<td style="background-color: #353B50;" title="6">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #11131A;" title="2">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+</tr>
+<tr><td class="valueentry">Tu</td><td style="background-color: #6B76A1;" title="12">&nbsp;</td>
+<td style="background-color: #7D89BB;" title="14">&nbsp;</td>
+<td style="background-color: #11131A;" title="2">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #474E6B;" title="8">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #353B50;" title="6">&nbsp;</td>
+<td style="background-color: #11131A;" title="2">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #11131A;" title="2">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #1A1D28;" title="3">&nbsp;</td>
+<td style="background-color: #1A1D28;" title="3">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #3E445D;" title="7">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #11131A;" title="2">&nbsp;</td>
+</tr>
+<tr><td class="valueentry">We</td><td style="background-color: #2C3143;" title="5">&nbsp;</td>
+<td style="background-color: #6B76A1;" title="12">&nbsp;</td>
+<td style="background-color: #626C93;" title="11">&nbsp;</td>
+<td style="background-color: #474E6B;" title="8">&nbsp;</td>
+<td style="background-color: #2C3143;" title="5">&nbsp;</td>
+<td style="background-color: #353B50;" title="6">&nbsp;</td>
+<td style="background-color: #1A1D28;" title="3">&nbsp;</td>
+<td style="background-color: #3E445D;" title="7">&nbsp;</td>
+<td style="background-color: #11131A;" title="2">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #11131A;" title="2">&nbsp;</td>
+<td style="background-color: #2C3143;" title="5">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #11131A;" title="2">&nbsp;</td>
+<td style="background-color: #1A1D28;" title="3">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #1A1D28;" title="3">&nbsp;</td>
+<td style="background-color: #1A1D28;" title="3">&nbsp;</td>
+<td style="background-color: #AABBFF;" title="19">&nbsp;</td>
+<td style="background-color: #1A1D28;" title="3">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #11131A;" title="2">&nbsp;</td>
+</tr>
+<tr><td class="valueentry">Th</td><td style="background-color: #8693C9;" title="15">&nbsp;</td>
+<td style="background-color: #505878;" title="9">&nbsp;</td>
+<td style="background-color: #1A1D28;" title="3">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #353B50;" title="6">&nbsp;</td>
+<td style="background-color: #11131A;" title="2">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #1A1D28;" title="3">&nbsp;</td>
+<td style="background-color: #11131A;" title="2">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #596286;" title="10">&nbsp;</td>
+<td style="background-color: #1A1D28;" title="3">&nbsp;</td>
+<td style="background-color: #11131A;" title="2">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #11131A;" title="2">&nbsp;</td>
+<td style="background-color: #1A1D28;" title="3">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #11131A;" title="2">&nbsp;</td>
+</tr>
+<tr><td class="valueentry">Fr</td><td style="background-color: #2C3143;" title="5">&nbsp;</td>
+<td style="background-color: #1A1D28;" title="3">&nbsp;</td>
+<td style="background-color: #1A1D28;" title="3">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #11131A;" title="2">&nbsp;</td>
+<td style="background-color: #1A1D28;" title="3">&nbsp;</td>
+<td style="background-color: #11131A;" title="2">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #1A1D28;" title="3">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #11131A;" title="2">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #11131A;" title="2">&nbsp;</td>
+<td style="background-color: #1A1D28;" title="3">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+</tr>
+<tr><td class="valueentry">Sa</td><td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #596286;" title="10">&nbsp;</td>
+<td style="background-color: #2C3143;" title="5">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #353B50;" title="6">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #11131A;" title="2">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #2C3143;" title="5">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #1A1D28;" title="3">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+</tr>
+<tr><td class="valueentry">Su</td><td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #6B76A1;" title="12">&nbsp;</td>
+<td style="background-color: #505878;" title="9">&nbsp;</td>
+<td style="background-color: #8693C9;" title="15">&nbsp;</td>
+<td style="background-color: #626C93;" title="11">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #626C93;" title="11">&nbsp;</td>
+<td style="background-color: #596286;" title="10">&nbsp;</td>
+<td style="background-color: #2C3143;" title="5">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #232735;" title="4">&nbsp;</td>
+<td style="background-color: #1A1D28;" title="3">&nbsp;</td>
+<td style="background-color: #08090D;" title="1">&nbsp;</td>
+<td style="background-color: #1A1D28;" title="3">&nbsp;</td>
+<td style="background-color: #2C3143;" title="5">&nbsp;</td>
+<td style="background-color: #2C3143;" title="5">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td><td class="keyentry">00</td><td class="keyentry">01</td><td class="keyentry">02</td><td class="keyentry">03</td><td class="keyentry">04</td><td class="keyentry">05</td><td class="keyentry">06</td><td class="keyentry">07</td><td class="keyentry">08</td><td class="keyentry">09</td><td class="keyentry">10</td><td class="keyentry">11</td><td class="keyentry">12</td><td class="keyentry">13</td><td class="keyentry">14</td><td class="keyentry">15</td><td class="keyentry">16</td><td class="keyentry">17</td><td class="keyentry">18</td><td class="keyentry">19</td><td class="keyentry">20</td><td class="keyentry">21</td><td class="keyentry">22</td><td class="keyentry">23</td></tr></table></td></tr><tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="Month-Day combined map"></a>Month-Day combined map</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">Brighter means higher level of hits</td></tr>
+<tr><td align="left" colspan="3" class="info">Day with max traffic is Dec 15 with hits 68</td></tr>
+<tr><td align="left" colspan="3" class="info">Day with min traffic is Dec 22 with hits 38</td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td colspan="3" align="center"><table border="0" cellpadding="0" cellspacing="0"><tr><td class="valueentry">Jan</td><td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+</tr>
+<tr><td class="valueentry">Feb</td><td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+</tr>
+<tr><td class="valueentry">Mar</td><td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+</tr>
+<tr><td class="valueentry">Apr</td><td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+</tr>
+<tr><td class="valueentry">May</td><td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+</tr>
+<tr><td class="valueentry">Jun</td><td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+</tr>
+<tr><td class="valueentry">Jul</td><td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+</tr>
+<tr><td class="valueentry">Aug</td><td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+</tr>
+<tr><td class="valueentry">Sep</td><td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+</tr>
+<tr><td class="valueentry">Oct</td><td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+</tr>
+<tr><td class="valueentry">Nov</td><td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+</tr>
+<tr><td class="valueentry">Dec</td><td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #9BAAE8;" title="62">&nbsp;</td>
+<td style="background-color: #7581B0;" title="47">&nbsp;</td>
+<td style="background-color: #7884B4;" title="48">&nbsp;</td>
+<td style="background-color: #AABBFF;" title="68">&nbsp;</td>
+<td style="background-color: #7A86B7;" title="49">&nbsp;</td>
+<td style="background-color: #69739D;" title="42">&nbsp;</td>
+<td style="background-color: #7A86B7;" title="49">&nbsp;</td>
+<td style="background-color: #6E79A5;" title="44">&nbsp;</td>
+<td style="background-color: #7884B4;" title="48">&nbsp;</td>
+<td style="background-color: #707BA8;" title="45">&nbsp;</td>
+<td style="background-color: #5F688E;" title="38">&nbsp;</td>
+<td style="background-color: #6E79A5;" title="44">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+<td style="background-color: #000000;" title="0">&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td><td class="keyentry">01</td><td class="keyentry">02</td><td class="keyentry">03</td><td class="keyentry">04</td><td class="keyentry">05</td><td class="keyentry">06</td><td class="keyentry">07</td><td class="keyentry">08</td><td class="keyentry">09</td><td class="keyentry">10</td><td class="keyentry">11</td><td class="keyentry">12</td><td class="keyentry">13</td><td class="keyentry">14</td><td class="keyentry">15</td><td class="keyentry">16</td><td class="keyentry">17</td><td class="keyentry">18</td><td class="keyentry">19</td><td class="keyentry">20</td><td class="keyentry">21</td><td class="keyentry">22</td><td class="keyentry">23</td><td class="keyentry">24</td><td class="keyentry">25</td><td class="keyentry">26</td><td class="keyentry">27</td><td class="keyentry">28</td><td class="keyentry">29</td><td class="keyentry">30</td><td class="keyentry">31</td></tr></table></td></tr><tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="Pageviews per visit"></a>Pageviews per visit</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">Number of pages requested per visit</td></tr>
+<tr><td align="left" colspan="3" class="info">Only documents are counted (not images). Reported ranges: 13</td></tr>
+<tr><td align="left" class="keyentry">1&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">169 (39.9%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="100%">&nbsp;</td>
+<td align="center" class="barempty" width="0%"></td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">2&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">55 (13.0%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="32%">&nbsp;</td>
+<td align="center" class="barempty" width="68%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">8&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">39 (9.2%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="23%">&nbsp;</td>
+<td align="center" class="barempty" width="77%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">11-20&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">37 (8.7%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="21%">&nbsp;</td>
+<td align="center" class="barempty" width="79%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">3&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">30 (7.1%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="17%">&nbsp;</td>
+<td align="center" class="barempty" width="83%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">6&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">23 (5.4%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="13%">&nbsp;</td>
+<td align="center" class="barempty" width="87%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">&gt; 30&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">16 (3.8%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="9%">&nbsp;</td>
+<td align="center" class="barempty" width="91%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">4&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">15 (3.5%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="8%">&nbsp;</td>
+<td align="center" class="barempty" width="92%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">9&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">13 (3.1%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="7%">&nbsp;</td>
+<td align="center" class="barempty" width="93%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">7&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">10 (2.4%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="5%">&nbsp;</td>
+<td align="center" class="barempty" width="95%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">21-30&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">7 (1.7%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="4%">&nbsp;</td>
+<td align="center" class="barempty" width="96%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">10&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">5 (1.2%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="2%">&nbsp;</td>
+<td align="center" class="barempty" width="98%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">5&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">5 (1.2%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="2%">&nbsp;</td>
+<td align="center" class="barempty" width="98%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="Requested pages"></a>Requested pages</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">Page requests ordered by hits</td></tr>
+<tr><td align="left" colspan="3" class="info">Different pages requested 1041</td></tr>
+<tr><td align="left" class="keyentry">1)<td align="left" class="valueentry">20680</td><td align="left" class="keyentry">/analytics/piwik/index.php?module=Live&amp;idSite=1&amp;action=ajaxTotalVisitors</td></tr>
+<tr><td align="left" class="keyentry">2)<td align="left" class="valueentry">18850</td><td align="left" class="keyentry">/analytics/piwik/index.php?module=Live&amp;idSite=1&amp;action=getLastVisitsStart</td></tr>
+<tr><td align="left" class="keyentry">3)<td align="left" class="valueentry">5640</td><td align="left" class="keyentry">/analytics/piwik/index.php?module=Live&amp;idSite=1&amp;action=getLastVisitsStart&amp;minIdVisit=40</td></tr>
+<tr><td align="left" class="keyentry">4)<td align="left" class="valueentry">4359</td><td align="left" class="keyentry">/analytics/piwik/index.php?module=Live&amp;idSite=1&amp;action=getLastVisitsStart&amp;minIdVisit=38</td></tr>
+<tr><td align="left" class="keyentry">5)<td align="left" class="valueentry">3592</td><td align="left" class="keyentry">/analytics/piwik/index.php?module=Live&amp;idSite=1&amp;action=getLastVisitsStart&amp;minIdVisit=36</td></tr>
+<tr><td align="left" class="keyentry">6)<td align="left" class="valueentry">2308</td><td align="left" class="keyentry">/analytics/piwik/index.php?module=Live&amp;idSite=1&amp;action=getLastVisitsStart&amp;minIdVisit=37</td></tr>
+<tr><td align="left" class="keyentry">7)<td align="left" class="valueentry">1531</td><td align="left" class="keyentry">/analytics/piwik/index.php?module=Live&amp;idSite=1&amp;action=getLastVisitsStart&amp;minIdVisit=34</td></tr>
+<tr><td align="left" class="keyentry">8)<td align="left" class="valueentry">1501</td><td align="left" class="keyentry">/analytics/piwik/index.php?module=Live&amp;idSite=1&amp;action=getLastVisitsStart&amp;minIdVisit=35</td></tr>
+<tr><td align="left" class="keyentry">9)<td align="left" class="valueentry">943</td><td align="left" class="keyentry">/</td></tr>
+<tr><td align="left" class="keyentry">10)<td align="left" class="valueentry">884</td><td align="left" class="keyentry">/analytics/piwik/index.php?module=Live&amp;idSite=2&amp;action=ajaxTotalVisitors</td></tr>
+<tr><td align="left" class="keyentry">11)<td align="left" class="valueentry">884</td><td align="left" class="keyentry">/analytics/piwik/index.php?module=Live&amp;idSite=2&amp;action=getLastVisitsStart</td></tr>
+<tr><td align="left" class="keyentry">12)<td align="left" class="valueentry">854</td><td align="left" class="keyentry">/analytics/piwik/index.php?module=Live&amp;idSite=2&amp;action=getLastVisitsStart&amp;minIdVisit=33</td></tr>
+<tr><td align="left" class="keyentry">13)<td align="left" class="valueentry">524</td><td align="left" class="keyentry">none</td></tr>
+<tr><td align="left" class="keyentry">14)<td align="left" class="valueentry">421</td><td align="left" class="keyentry">/analytics/piwik/index.php?module=Live&amp;idSite=1&amp;action=getLastVisitsStart&amp;minIdVisit=Y</td></tr>
+<tr><td align="left" class="keyentry">15)<td align="left" class="valueentry">268</td><td align="left" class="keyentry">/analytics/piwik/index.php?module=Live&amp;idSite=1&amp;action=getLastVisitsStart&amp;minIdVisit=39</td></tr>
+<tr><td align="left" class="keyentry">16)<td align="left" class="valueentry">248</td><td align="left" class="keyentry">/robots.txt</td></tr>
+<tr><td align="left" class="keyentry">17)<td align="left" class="valueentry">241</td><td align="left" class="keyentry">/analytics/piwik/index.php?module=Live&amp;idSite=1&amp;action=getLastVisitsStart&amp;minIdVisit=43</td></tr>
+<tr><td align="left" class="keyentry">18)<td align="left" class="valueentry">233</td><td align="left" class="keyentry">/analytics/piwik/index.php?module=Live&amp;idSite=1&amp;action=getLastVisitsStart&amp;minIdVisit=31</td></tr>
+<tr><td align="left" class="keyentry">19)<td align="left" class="valueentry">145</td><td align="left" class="keyentry">/alpha.pdf</td></tr>
+<tr><td align="left" class="keyentry">20)<td align="left" class="valueentry">115</td><td align="left" class="keyentry">/blog/feed/</td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="Requested images and CSS"></a>Requested images and CSS</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">Images and CSS requests ordered by hits</td></tr>
+<tr><td align="left" colspan="3" class="info">Different images and CSS requested 229</td></tr>
+<tr><td align="left" class="keyentry">1)<td align="left" class="valueentry">59</td><td align="left" class="keyentry">/blog/wp-content/plugins/tweet-blender/img/ajax-refresh.gif</td></tr>
+<tr><td align="left" class="keyentry">2)<td align="left" class="valueentry">47</td><td align="left" class="keyentry">/blog/wp-content/plugins/tweet-blender/img/ajax-refresh-icon.gif</td></tr>
+<tr><td align="left" class="keyentry">3)<td align="left" class="valueentry">41</td><td align="left" class="keyentry">/favicon.ico</td></tr>
+<tr><td align="left" class="keyentry">4)<td align="left" class="valueentry">37</td><td align="left" class="keyentry">/wp-content/themes/desk/style.css</td></tr>
+<tr><td align="left" class="keyentry">5)<td align="left" class="valueentry">36</td><td align="left" class="keyentry">/wp-content/plugins/tweet-blender/css/tweets.css</td></tr>
+<tr><td align="left" class="keyentry">6)<td align="left" class="valueentry">29</td><td align="left" class="keyentry">/analytics/piwik/piwik.js</td></tr>
+<tr><td align="left" class="keyentry">7)<td align="left" class="valueentry">21</td><td align="left" class="keyentry">/blog/wp-content/plugins/tweet-blender/css/tweets.css</td></tr>
+<tr><td align="left" class="keyentry">8)<td align="left" class="valueentry">21</td><td align="left" class="keyentry">/wp-content/uploads/work5.gif</td></tr>
+<tr><td align="left" class="keyentry">9)<td align="left" class="valueentry">21</td><td align="left" class="keyentry">/blog/wp-content/themes/twentyten/style.css</td></tr>
+<tr><td align="left" class="keyentry">10)<td align="left" class="valueentry">21</td><td align="left" class="keyentry">/css/home.css</td></tr>
+<tr><td align="left" class="keyentry">11)<td align="left" class="valueentry">21</td><td align="left" class="keyentry">/css/reset.css</td></tr>
+<tr><td align="left" class="keyentry">12)<td align="left" class="valueentry">20</td><td align="left" class="keyentry">/blog/wp-content/themes/twentyten/images/headers/sunset.jpg</td></tr>
+<tr><td align="left" class="keyentry">13)<td align="left" class="valueentry">20</td><td align="left" class="keyentry">/wp-content/uploads/Untitled.png</td></tr>
+<tr><td align="left" class="keyentry">14)<td align="left" class="valueentry">19</td><td align="left" class="keyentry">/blog/wp-content/themes/twentyten/images/wordpress.png</td></tr>
+<tr><td align="left" class="keyentry">15)<td align="left" class="valueentry">18</td><td align="left" class="keyentry">/wp-content/themes/desk/images/flooring.jpg</td></tr>
+<tr><td align="left" class="keyentry">16)<td align="left" class="valueentry">18</td><td align="left" class="keyentry">/wp-content/themes/desk/images/minigrad.png</td></tr>
+<tr><td align="left" class="keyentry">17)<td align="left" class="valueentry">18</td><td align="left" class="keyentry">/wp-content/themes/desk/images/middle.png</td></tr>
+<tr><td align="left" class="keyentry">18)<td align="left" class="valueentry">18</td><td align="left" class="keyentry">/wp-content/themes/desk/images/blackboard.jpg</td></tr>
+<tr><td align="left" class="keyentry">19)<td align="left" class="valueentry">17</td><td align="left" class="keyentry">/phpmyadmin/js/functions.js</td></tr>
+<tr><td align="left" class="keyentry">20)<td align="left" class="valueentry">17</td><td align="left" class="keyentry">/phpmyadmin/print.css</td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="Referers"></a>Referers</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">Referers ordered by visits (google excluded)</td></tr>
+<tr><td align="left" colspan="3" class="info">Different referers 66</td></tr>
+<tr><td align="left" class="keyentry">1)<td align="left" class="valueentry">478</td><td align="left" class="keyentry">none</td></tr>
+<tr><td align="left" class="keyentry">2)<td align="left" class="valueentry">12</td><td align="left" class="keyentry"><a class="url" href="http://host-tracker.com/site-uptime-stats/5928182/">http://host-tracker.com/site-uptime-stats/5928182/</a></td></tr>
+<tr><td align="left" class="keyentry">3)<td align="left" class="valueentry">6</td><td align="left" class="keyentry"><a class="url" href="http://www.funky-si.co.uk/blog/2010/09/science-vs-religion/">http://www.funky-si.co.uk/blog/2010/09/science-vs-religion/</a></td></tr>
+<tr><td align="left" class="keyentry">4)<td align="left" class="valueentry">6</td><td align="left" class="keyentry"><a class="url" href="http://www.funky-si.co.uk/blog/2010/06/ephesians-320/">http://www.funky-si.co.uk/blog/2010/06/ephesians-320/</a></td></tr>
+<tr><td align="left" class="keyentry">5)<td align="left" class="valueentry">5</td><td align="left" class="keyentry">Google Search Engine</td></tr>
+<tr><td align="left" class="keyentry">6)<td align="left" class="valueentry">3</td><td align="left" class="keyentry"><a class="url" href="http://www.prayer4work.com/analytics/piwik/index.php?module=CoreHome&action=index&idSite=1&period=year&date=yesterday">http://www.prayer4work.com/analytics/piwik/index.php?module=CoreHome&amp;action=index&amp;idSite=1&amp;period=ye...</a></td></tr>
+<tr><td align="left" class="keyentry">7)<td align="left" class="valueentry">3</td><td align="left" class="keyentry"><a class="url" href="http://www.prayer4work.co.uk/">http://www.prayer4work.co.uk/</a></td></tr>
+<tr><td align="left" class="keyentry">8)<td align="left" class="valueentry">2</td><td align="left" class="keyentry"><a class="url" href="http://www.prayer4work.com/genesis/">http://www.prayer4work.com/genesis/</a></td></tr>
+<tr><td align="left" class="keyentry">9)<td align="left" class="valueentry">2</td><td align="left" class="keyentry"><a class="url" href="http://www.funky-si.co.uk/">http://www.funky-si.co.uk/</a></td></tr>
+<tr><td align="left" class="keyentry">10)<td align="left" class="valueentry">2</td><td align="left" class="keyentry"><a class="url" href="http://funkysi.com/">http://funkysi.com/</a></td></tr>
+<tr><td align="left" class="keyentry">11)<td align="left" class="valueentry">2</td><td align="left" class="keyentry"><a class="url" href="http://www.funky-si.co.uk/blog/2010/06/leadership/">http://www.funky-si.co.uk/blog/2010/06/leadership/</a></td></tr>
+<tr><td align="left" class="keyentry">12)<td align="left" class="valueentry">2</td><td align="left" class="keyentry"><a class="url" href="http://www.funky-si.co.uk/blog/2010/07/the-cage-of-freedom/">http://www.funky-si.co.uk/blog/2010/07/the-cage-of-freedom/</a></td></tr>
+<tr><td align="left" class="keyentry">13)<td align="left" class="valueentry">2</td><td align="left" class="keyentry"><a class="url" href="http://www.funky-si.co.uk/blog/2010/09/my-tuesday-prayer-day/">http://www.funky-si.co.uk/blog/2010/09/my-tuesday-prayer-day/</a></td></tr>
+<tr><td align="left" class="keyentry">14)<td align="left" class="valueentry">2</td><td align="left" class="keyentry"><a class="url" href="http://www.prayer4work.com/2010/11/09/about-simon/">http://www.prayer4work.com/2010/11/09/about-simon/</a></td></tr>
+<tr><td align="left" class="keyentry">15)<td align="left" class="valueentry">2</td><td align="left" class="keyentry"><a class="url" href="http://www.baidu.com/s?wd=QQ">http://www.baidu.com/s?wd=QQ</a></td></tr>
+<tr><td align="left" class="keyentry">16)<td align="left" class="valueentry">2</td><td align="left" class="keyentry"><a class="url" href="http://funkysi.com/blog/">http://funkysi.com/blog/</a></td></tr>
+<tr><td align="left" class="keyentry">17)<td align="left" class="valueentry">2</td><td align="left" class="keyentry"><a class="url" href="http://www.funky-si.co.uk/blog/2010/08/pray-4-work-lunch/">http://www.funky-si.co.uk/blog/2010/08/pray-4-work-lunch/</a></td></tr>
+<tr><td align="left" class="keyentry">18)<td align="left" class="valueentry">2</td><td align="left" class="keyentry"><a class="url" href="http://www.healthweeks.com">http://www.healthweeks.com</a></td></tr>
+<tr><td align="left" class="keyentry">19)<td align="left" class="valueentry">2</td><td align="left" class="keyentry"><a class="url" href="http://www.funkysi.com/">http://www.funkysi.com/</a></td></tr>
+<tr><td align="left" class="keyentry">20)<td align="left" class="valueentry">1</td><td align="left" class="keyentry"><a class="url" href="http://www.imcashsaver.com/fat-cow-hosting">http://www.imcashsaver.com/fat-cow-hosting</a></td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="Referers by first time"></a>Referers by first time</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">Referers ordered by first time date, newer on top (referers from google excluded)</td></tr>
+<tr><td align="left" colspan="3" class="info">Different referers 65</td></tr>
+<tr><td align="left" class="keyentry">1)<td align="left" class="valueentry">23/Dec/2010</td><td align="left" class="keyentry"><a class="url" href="http://www.prayer4work.com/2010/11/09/about-simon/">http://www.prayer4work.com/2010/11/09/about-simon/</a></td></tr>
+<tr><td align="left" class="keyentry">2)<td align="left" class="valueentry">23/Dec/2010</td><td align="left" class="keyentry"><a class="url" href="http://bradlmc23.jetnation.info/general/nanny-background-check/">http://bradlmc23.jetnation.info/general/nanny-background-check/</a></td></tr>
+<tr><td align="left" class="keyentry">3)<td align="left" class="valueentry">22/Dec/2010</td><td align="left" class="keyentry"><a class="url" href="http://www.funky-si.co.uk/blog/2010/09/more-tea-vicar/comment-page-1/">http://www.funky-si.co.uk/blog/2010/09/more-tea-vicar/comment-page-1/</a></td></tr>
+<tr><td align="left" class="keyentry">4)<td align="left" class="valueentry">22/Dec/2010</td><td align="left" class="keyentry"><a class="url" href="http://www.funky-si.co.uk/blog/2010/09/more-tea-vicar/">http://www.funky-si.co.uk/blog/2010/09/more-tea-vicar/</a></td></tr>
+<tr><td align="left" class="keyentry">5)<td align="left" class="valueentry">22/Dec/2010</td><td align="left" class="keyentry"><a class="url" href="http://www.prayer4work.com/analytics/piwik/index.php?module=CoreHome&action=index&idSite=1&period=year&date=2010-12-21">http://www.prayer4work.com/analytics/piwik/index.php?module=CoreHome&amp;action=index&amp;idSite=1&amp;period=ye...</a></td></tr>
+<tr><td align="left" class="keyentry">6)<td align="left" class="valueentry">22/Dec/2010</td><td align="left" class="keyentry"><a class="url" href="http://buford58b.insanejournal.com/890.html">http://buford58b.insanejournal.com/890.html</a></td></tr>
+<tr><td align="left" class="keyentry">7)<td align="left" class="valueentry">22/Dec/2010</td><td align="left" class="keyentry"><a class="url" href="http://www.funky-si.co.uk/blog/2010/06/leadership/">http://www.funky-si.co.uk/blog/2010/06/leadership/</a></td></tr>
+<tr><td align="left" class="keyentry">8)<td align="left" class="valueentry">21/Dec/2010</td><td align="left" class="keyentry"><a class="url" href="http://dentistinbrooklyn.org">http://dentistinbrooklyn.org</a></td></tr>
+<tr><td align="left" class="keyentry">9)<td align="left" class="valueentry">21/Dec/2010</td><td align="left" class="keyentry"><a class="url" href="http://www.funky-si.co.uk/blog/2010/07/you-mean-you-dont-get-paid/">http://www.funky-si.co.uk/blog/2010/07/you-mean-you-dont-get-paid/</a></td></tr>
+<tr><td align="left" class="keyentry">10)<td align="left" class="valueentry">21/Dec/2010</td><td align="left" class="keyentry">HTTP://prayer4work.com</td></tr>
+<tr><td align="left" class="keyentry">11)<td align="left" class="valueentry">21/Dec/2010</td><td align="left" class="keyentry"><a class="url" href="http://www.prayer4work.com/location/">http://www.prayer4work.com/location/</a></td></tr>
+<tr><td align="left" class="keyentry">12)<td align="left" class="valueentry">21/Dec/2010</td><td align="left" class="keyentry"><a class="url" href="http://www.healthweeks.com">http://www.healthweeks.com</a></td></tr>
+<tr><td align="left" class="keyentry">13)<td align="left" class="valueentry">20/Dec/2010</td><td align="left" class="keyentry"><a class="url" href="http://www.articlesmountain.com/9500/columbus-ohio-a-maturing-global-city/">http://www.articlesmountain.com/9500/columbus-ohio-a-maturing-global-city/</a></td></tr>
+<tr><td align="left" class="keyentry">14)<td align="left" class="valueentry">20/Dec/2010</td><td align="left" class="keyentry"><a class="url" href="http://auslander.ru">http://auslander.ru</a></td></tr>
+<tr><td align="left" class="keyentry">15)<td align="left" class="valueentry">20/Dec/2010</td><td align="left" class="keyentry"><a class="url" href="http://tv-base.com/">http://tv-base.com/</a></td></tr>
+<tr><td align="left" class="keyentry">16)<td align="left" class="valueentry">20/Dec/2010</td><td align="left" class="keyentry"><a class="url" href="http://www.silver-bullion.info/Silver_bullion_rounds">http://www.silver-bullion.info/Silver_bullion_rounds</a></td></tr>
+<tr><td align="left" class="keyentry">17)<td align="left" class="valueentry">19/Dec/2010</td><td align="left" class="keyentry"><a class="url" href="http://www.jobhiringhub.com">http://www.jobhiringhub.com</a></td></tr>
+<tr><td align="left" class="keyentry">18)<td align="left" class="valueentry">19/Dec/2010</td><td align="left" class="keyentry"><a class="url" href="http://www.prayer4work.com/genesis/">http://www.prayer4work.com/genesis/</a></td></tr>
+<tr><td align="left" class="keyentry">19)<td align="left" class="valueentry">19/Dec/2010</td><td align="left" class="keyentry"><a class="url" href="http://www.imcashsaver.com/Hosting">http://www.imcashsaver.com/Hosting</a></td></tr>
+<tr><td align="left" class="keyentry">20)<td align="left" class="valueentry">18/Dec/2010</td><td align="left" class="keyentry"><a class="url" href="http://torontorealestate186.wikispaces.com/Toronto+Housing+Collection+2+%29+Your+choice+of+Locality+">http://torontorealestate186.wikispaces.com/Toronto+Housing+Collection+2+%29+Your+choice+of+Locality+</a></td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="Robots and web spiders"></a>Robots and web spiders</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">Agents requesting robots.txt. MSIECrawler excluded.</td></tr>
+<tr><td align="left" colspan="3" class="info">Total number of different robots 23</td></tr>
+<tr><td align="left" class="keyentry">1)<td align="left" class="valueentry">15</td><td align="left" class="keyentry">Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)</td></tr>
+<tr><td align="left" class="keyentry">2)<td align="left" class="valueentry">12</td><td align="left" class="keyentry">Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)</td></tr>
+<tr><td align="left" class="keyentry">3)<td align="left" class="valueentry">11</td><td align="left" class="keyentry">Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)</td></tr>
+<tr><td align="left" class="keyentry">4)<td align="left" class="valueentry">9</td><td align="left" class="keyentry">magpie-crawler/1.1 (U; Linux amd64; en-GB; +http://www.brandwatch.net)</td></tr>
+<tr><td align="left" class="keyentry">5)<td align="left" class="valueentry">6</td><td align="left" class="keyentry">R6_FeedFetcher(www.radian6.com/crawler)</td></tr>
+<tr><td align="left" class="keyentry">6)<td align="left" class="valueentry">6</td><td align="left" class="keyentry">Mozilla/5.0 (compatible; YandexBot/3.0; MirrorDetector; +http://yandex.com/bots)</td></tr>
+<tr><td align="left" class="keyentry">7)<td align="left" class="valueentry">4</td><td align="left" class="keyentry">Mozilla/5.0 (compatible; ScoutJet; +http://www.scoutjet.com/)</td></tr>
+<tr><td align="left" class="keyentry">8)<td align="left" class="valueentry">3</td><td align="left" class="keyentry">Mozilla/5.0 (compatible; YandexImages/3.0; +http://yandex.com/bots)</td></tr>
+<tr><td align="left" class="keyentry">9)<td align="left" class="valueentry">3</td><td align="left" class="keyentry">Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.3; ips-agent) Gecko/20090824 Fedora/1.0.7-1.1.fc4  ...</td></tr>
+<tr><td align="left" class="keyentry">10)<td align="left" class="valueentry">3</td><td align="left" class="keyentry">Baiduspider+(+http://www.baidu.com/search/spider.htm)</td></tr>
+<tr><td align="left" class="keyentry">11)<td align="left" class="valueentry">3</td><td align="left" class="keyentry">Mozilla/5.0 (compatible; DotBot/1.1; http://www.dotnetdotcom.org/, crawler@dotnetdotcom.org)</td></tr>
+<tr><td align="left" class="keyentry">12)<td align="left" class="valueentry">3</td><td align="left" class="keyentry">Mozilla/5.0 (compatible; Plukkie/1.3; http://www.botje.com/plukkie.htm)</td></tr>
+<tr><td align="left" class="keyentry">13)<td align="left" class="valueentry">2</td><td align="left" class="keyentry">Mozilla/5.0 (Windows; U; Windows NT 5.1; en; rv:1.9.0.13) Gecko/2009073022 Firefox/3.5.2 (.NET CLR 3...</td></tr>
+<tr><td align="left" class="keyentry">14)<td align="left" class="valueentry">2</td><td align="left" class="keyentry">Mozilla/5.0 (compatible; MJ12bot/v1.3.3; http://www.majestic12.co.uk/bot.php?+)</td></tr>
+<tr><td align="left" class="keyentry">15)<td align="left" class="valueentry">2</td><td align="left" class="keyentry">Mozilla/5.0 (compatible; SiteBot/0.1; +http://www.sitebot.org/robot/)</td></tr>
+<tr><td align="left" class="keyentry">16)<td align="left" class="valueentry">1</td><td align="left" class="keyentry">ia_archiver-web.archive.org</td></tr>
+<tr><td align="left" class="keyentry">17)<td align="left" class="valueentry">1</td><td align="left" class="keyentry">envolk/1.7 (+http://www.envolk.com/envolkspiderinfo.html)</td></tr>
+<tr><td align="left" class="keyentry">18)<td align="left" class="valueentry">1</td><td align="left" class="keyentry">Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)</td></tr>
+<tr><td align="left" class="keyentry">19)<td align="left" class="valueentry">1</td><td align="left" class="keyentry">Mozilla/5.0 (compatible; Purebot/1.1; +http://www.puritysearch.net/)</td></tr>
+<tr><td align="left" class="keyentry">20)<td align="left" class="valueentry">1</td><td align="left" class="keyentry">msnbot/2.0b (+http://search.msn.com/msnbot.htm)._</td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="User agents"></a>User agents</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">The entire user agent string ordered by visits</td></tr>
+<tr><td align="left" colspan="3" class="info">Different agents 169</td></tr>
+<tr><td align="left" class="keyentry">1)<td align="left" class="valueentry">49</td><td align="left" class="keyentry">Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)</td></tr>
+<tr><td align="left" class="keyentry">2)<td align="left" class="valueentry">45</td><td align="left" class="keyentry">Baiduspider+(+http://www.baidu.com/search/spider.htm)</td></tr>
+<tr><td align="left" class="keyentry">3)<td align="left" class="valueentry">27</td><td align="left" class="keyentry">-</td></tr>
+<tr><td align="left" class="keyentry">4)<td align="left" class="valueentry">22</td><td align="left" class="keyentry">Feedfetcher-Google; (+http://www.google.com/feedfetcher.html; 1 subscribers; feed-id=164536927679630...</td></tr>
+<tr><td align="left" class="keyentry">5)<td align="left" class="valueentry">22</td><td align="left" class="keyentry">Feedfetcher-Google; (+http://www.google.com/feedfetcher.html; 1 subscribers; feed-id=610763692224907...</td></tr>
+<tr><td align="left" class="keyentry">6)<td align="left" class="valueentry">20</td><td align="left" class="keyentry">Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)</td></tr>
+<tr><td align="left" class="keyentry">7)<td align="left" class="valueentry">17</td><td align="left" class="keyentry">Rome Client (http://tinyurl.com/64t5n) Ver: 0.9</td></tr>
+<tr><td align="left" class="keyentry">8)<td align="left" class="valueentry">15</td><td align="left" class="keyentry">Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)</td></tr>
+<tr><td align="left" class="keyentry">9)<td align="left" class="valueentry">13</td><td align="left" class="keyentry">Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)</td></tr>
+<tr><td align="left" class="keyentry">10)<td align="left" class="valueentry">12</td><td align="left" class="keyentry">magpie-crawler/1.1 (U; Linux amd64; en-GB; +http://www.brandwatch.net)</td></tr>
+<tr><td align="left" class="keyentry">11)<td align="left" class="valueentry">12</td><td align="left" class="keyentry">WordPress/3.0.3; http://www.funky-si.co.uk/blog</td></tr>
+<tr><td align="left" class="keyentry">12)<td align="left" class="valueentry">12</td><td align="left" class="keyentry">Mozilla/4.0 (compatible; HostTracker.com/1.0;+http://host-tracker.com/)</td></tr>
+<tr><td align="left" class="keyentry">13)<td align="left" class="valueentry">12</td><td align="left" class="keyentry">Feedfetcher-Google; (+http://www.google.com/feedfetcher.html; 1 subscribers; feed-id=282862569748362...</td></tr>
+<tr><td align="left" class="keyentry">14)<td align="left" class="valueentry">12</td><td align="left" class="keyentry">WordPress/3.0.3; http://www.prayer4work.com</td></tr>
+<tr><td align="left" class="keyentry">15)<td align="left" class="valueentry">12</td><td align="left" class="keyentry">Apache/2.2.16 (Ubuntu) (internal dummy connection)</td></tr>
+<tr><td align="left" class="keyentry">16)<td align="left" class="valueentry">11</td><td align="left" class="keyentry">Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/534.13 (KHTML, like Gecko) Chrome/9.0.597.19 Saf...</td></tr>
+<tr><td align="left" class="keyentry">17)<td align="left" class="valueentry">10</td><td align="left" class="keyentry">Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/534.10 (KHTML, like Gecko) Chrome/8.0.552.215 Sa...</td></tr>
+<tr><td align="left" class="keyentry">18)<td align="left" class="valueentry">9</td><td align="left" class="keyentry">Mozilla/5.0 (X11; U; Linux i686; en-GB; rv:1.9.1.15) Gecko/20101027 Fedora/3.5.15-1.fc12 Firefox/3.5...</td></tr>
+<tr><td align="left" class="keyentry">19)<td align="left" class="valueentry">9</td><td align="left" class="keyentry">Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/534.10 (KHTML, like Gecko) Chrome/8.0.552.224 Sa...</td></tr>
+<tr><td align="left" class="keyentry">20)<td align="left" class="valueentry">6</td><td align="left" class="keyentry">R6_FeedFetcher(www.radian6.com/crawler)</td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="Operating Systems"></a>Operating Systems</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">Operating Systems by visits</td></tr>
+<tr><td align="left" colspan="3" class="info">Different operating systems listed 4</td></tr>
+<tr><td align="left" class="keyentry">Unknown&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">370 (63.4%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="100%">&nbsp;</td>
+<td align="center" class="barempty" width="0%"></td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">Windows&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">139 (23.8%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="37%">&nbsp;</td>
+<td align="center" class="barempty" width="63%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">Linux&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">69 (11.8%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="18%">&nbsp;</td>
+<td align="center" class="barempty" width="82%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">Macintosh&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">6 (1.0%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="1%">&nbsp;</td>
+<td align="center" class="barempty" width="99%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="Browsers"></a>Browsers</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">Browsers used by visits</td></tr>
+<tr><td align="left" colspan="3" class="info">Different browsers listed 16</td></tr>
+<tr><td align="left" class="keyentry">Unknown&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">238 (40.8%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="100%">&nbsp;</td>
+<td align="center" class="barempty" width="0%"></td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">Firefox&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">59 (10.1%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="24%">&nbsp;</td>
+<td align="center" class="barempty" width="76%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">GoogleBot&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">49 (8.4%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="20%">&nbsp;</td>
+<td align="center" class="barempty" width="80%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">Explorer 6.x&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">47 (8.0%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="19%">&nbsp;</td>
+<td align="center" class="barempty" width="81%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">Baidu.com Bot&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">45 (7.7%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="18%">&nbsp;</td>
+<td align="center" class="barempty" width="82%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">Safari&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">36 (6.2%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="15%">&nbsp;</td>
+<td align="center" class="barempty" width="85%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">Yandex.com Bot&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">31 (5.3%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="13%">&nbsp;</td>
+<td align="center" class="barempty" width="87%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">Explorer 7.x&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">28 (4.8%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="11%">&nbsp;</td>
+<td align="center" class="barempty" width="89%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">Yahoo Slurp&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">13 (2.2%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="5%">&nbsp;</td>
+<td align="center" class="barempty" width="95%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">Opera&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">11 (1.9%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="4%">&nbsp;</td>
+<td align="center" class="barempty" width="96%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">Explorer unknown version&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">9 (1.5%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="3%">&nbsp;</td>
+<td align="center" class="barempty" width="97%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">Explorer 5.x&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">6 (1.0%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="2%">&nbsp;</td>
+<td align="center" class="barempty" width="98%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">Wget&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">5 (0.9%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="2%">&nbsp;</td>
+<td align="center" class="barempty" width="98%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">Other Mozilla based&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">4 (0.7%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="1%">&nbsp;</td>
+<td align="center" class="barempty" width="99%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">MSNbot&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">2 (0.3%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="0%"></td>
+<td align="center" class="barempty" width="100%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">Explorer 4.x&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">1 (0.2%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="0%"></td>
+<td align="center" class="barempty" width="100%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="404 Errors"></a>404 Errors</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">Requests for missing documents</td></tr>
+<tr><td align="left" colspan="3" class="info">Different missing documents requested 204</td></tr>
+<tr><td align="left" class="keyentry">1)<td align="left" class="valueentry">39</td><td align="left" class="keyentry">/robots.txt</td></tr>
+<tr><td align="left" class="keyentry">2)<td align="left" class="valueentry">39</td><td align="left" class="keyentry">/analytics/piwik/e</td></tr>
+<tr><td align="left" class="keyentry">3)<td align="left" class="valueentry">39</td><td align="left" class="keyentry">/analytics/piwik/Y</td></tr>
+<tr><td align="left" class="keyentry">4)<td align="left" class="valueentry">18</td><td align="left" class="keyentry">/funkysi/</td></tr>
+<tr><td align="left" class="keyentry">5)<td align="left" class="valueentry">11</td><td align="left" class="keyentry">/comments/feed/</td></tr>
+<tr><td align="left" class="keyentry">6)<td align="left" class="valueentry">5</td><td align="left" class="keyentry">/awstats/awstats.pl?configdir=/etc/awstats</td></tr>
+<tr><td align="left" class="keyentry">7)<td align="left" class="valueentry">5</td><td align="left" class="keyentry">/wp-content/plugins/tweet-blender/img/tweetblender-logo_32x32.png</td></tr>
+<tr><td align="left" class="keyentry">8)<td align="left" class="valueentry">4</td><td align="left" class="keyentry">/phpmyadmin/scripts/setup.php</td></tr>
+<tr><td align="left" class="keyentry">9)<td align="left" class="valueentry">4</td><td align="left" class="keyentry">/phpMyAdmin/scripts/setup.php</td></tr>
+<tr><td align="left" class="keyentry">10)<td align="left" class="valueentry">4</td><td align="left" class="keyentry">/2010/11/08/blog/</td></tr>
+<tr><td align="left" class="keyentry">11)<td align="left" class="valueentry">3</td><td align="left" class="keyentry">/websql/scripts/setup.php</td></tr>
+<tr><td align="left" class="keyentry">12)<td align="left" class="valueentry">3</td><td align="left" class="keyentry">/phpMyAdmin-2.6.3/scripts/setup.php</td></tr>
+<tr><td align="left" class="keyentry">13)<td align="left" class="valueentry">3</td><td align="left" class="keyentry">/mysqladmin/scripts/setup.php</td></tr>
+<tr><td align="left" class="keyentry">14)<td align="left" class="valueentry">3</td><td align="left" class="keyentry">/phpMyAdmin-2.6.2-rc1/scripts/setup.php</td></tr>
+<tr><td align="left" class="keyentry">15)<td align="left" class="valueentry">3</td><td align="left" class="keyentry">/php-my-admin/scripts/setup.php</td></tr>
+<tr><td align="left" class="keyentry">16)<td align="left" class="valueentry">2</td><td align="left" class="keyentry">/phpMyAdmin-2.6.0-alpha2/scripts/setup.php</td></tr>
+<tr><td align="left" class="keyentry">17)<td align="left" class="valueentry">2</td><td align="left" class="keyentry">/phpMyAdmin-2.8.0.2/scripts/setup.php</td></tr>
+<tr><td align="left" class="keyentry">18)<td align="left" class="valueentry">2</td><td align="left" class="keyentry">/PMA2005/scripts/setup.php</td></tr>
+<tr><td align="left" class="keyentry">19)<td align="left" class="valueentry">2</td><td align="left" class="keyentry">/phpMyAdmin-2.5.1/scripts/setup.php</td></tr>
+<tr><td align="left" class="keyentry">20)<td align="left" class="valueentry">2</td><td align="left" class="keyentry">/phpMyAdmin-2.5.4/scripts/setup.php</td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="Domains"></a>Domains</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">Top Level Domains sorted by visits</td></tr>
+<tr><td align="left" colspan="3" class="info">Total number of Top Level Domains 3</td></tr>
+<tr><td align="left" class="keyentry">uk:80&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">262 (44.9%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="100%">&nbsp;</td>
+<td align="center" class="barempty" width="0%"></td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">com:80&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">210 (36.0%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="80%">&nbsp;</td>
+<td align="center" class="barempty" width="20%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">numeric IP&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">112 (19.2%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="42%">&nbsp;</td>
+<td align="center" class="barempty" width="58%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="Googled pages"></a>Googled pages</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">Pages accessed by the Google crawler, last access reported</td></tr>
+<tr><td align="left" colspan="3" class="info">Number of pages googled 105</td></tr>
+<tr><td align="left" class="keyentry">1)<td align="left" class="valueentry">23/Dec/2010</td><td align="left" class="keyentry">/robots.txt</td></tr>
+<tr><td align="left" class="keyentry">2)<td align="left" class="valueentry">23/Dec/2010</td><td align="left" class="keyentry">/blog/</td></tr>
+<tr><td align="left" class="keyentry">3)<td align="left" class="valueentry">23/Dec/2010</td><td align="left" class="keyentry">/location/</td></tr>
+<tr><td align="left" class="keyentry">4)<td align="left" class="valueentry">23/Dec/2010</td><td align="left" class="keyentry">/sitemap.xml.gz</td></tr>
+<tr><td align="left" class="keyentry">5)<td align="left" class="valueentry">23/Dec/2010</td><td align="left" class="keyentry">/blog/2010/08/</td></tr>
+<tr><td align="left" class="keyentry">6)<td align="left" class="valueentry">23/Dec/2010</td><td align="left" class="keyentry">/</td></tr>
+<tr><td align="left" class="keyentry">7)<td align="left" class="valueentry">23/Dec/2010</td><td align="left" class="keyentry">/2010/09/14/tuesday-prayer-day/</td></tr>
+<tr><td align="left" class="keyentry">8)<td align="left" class="valueentry">23/Dec/2010</td><td align="left" class="keyentry">/author/prayer4work/</td></tr>
+<tr><td align="left" class="keyentry">9)<td align="left" class="valueentry">23/Dec/2010</td><td align="left" class="keyentry">/?author=1</td></tr>
+<tr><td align="left" class="keyentry">10)<td align="left" class="valueentry">23/Dec/2010</td><td align="left" class="keyentry">/blog/category/church/page/2/</td></tr>
+<tr><td align="left" class="keyentry">11)<td align="left" class="valueentry">23/Dec/2010</td><td align="left" class="keyentry">/blog/category/church/</td></tr>
+<tr><td align="left" class="keyentry">12)<td align="left" class="valueentry">23/Dec/2010</td><td align="left" class="keyentry">/blog/?cat=3</td></tr>
+<tr><td align="left" class="keyentry">13)<td align="left" class="valueentry">23/Dec/2010</td><td align="left" class="keyentry">/twitbook/</td></tr>
+<tr><td align="left" class="keyentry">14)<td align="left" class="valueentry">23/Dec/2010</td><td align="left" class="keyentry">/blog/2010/09/more-tea-vicar/trackback/</td></tr>
+<tr><td align="left" class="keyentry">15)<td align="left" class="valueentry">23/Dec/2010</td><td align="left" class="keyentry">/useful-links/</td></tr>
+<tr><td align="left" class="keyentry">16)<td align="left" class="valueentry">23/Dec/2010</td><td align="left" class="keyentry">/wp-includes/js/comment-reply.js?ver=20090102</td></tr>
+<tr><td align="left" class="keyentry">17)<td align="left" class="valueentry">23/Dec/2010</td><td align="left" class="keyentry">/wp-content/plugins/tweet-blender/js/main.js?ver=3.0.3</td></tr>
+<tr><td align="left" class="keyentry">18)<td align="left" class="valueentry">23/Dec/2010</td><td align="left" class="keyentry">/wp-content/plugins/tweet-blender/js/jquery.json-2.2.min.js?ver=3.0.3</td></tr>
+<tr><td align="left" class="keyentry">19)<td align="left" class="valueentry">23/Dec/2010</td><td align="left" class="keyentry">/sitemap.xml</td></tr>
+<tr><td align="left" class="keyentry">20)<td align="left" class="valueentry">22/Dec/2010</td><td align="left" class="keyentry">/blog/2010/09/more-tea-vicar/</td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="Adsensed pages"></a>Adsensed pages</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">Pages accessed by the Adsense crawler, last access reported</td></tr>
+<tr><td align="left" colspan="3" class="info">Number of pages adsensed 0</td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="Google Keyphrases"></a>Google Keyphrases</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">Keyphrases used in google searches ordered by visits</td></tr>
+<tr><td align="left" colspan="3" class="info">Total number of keyphrases 5</td></tr>
+<tr><td align="left" class="keyentry">1)<td align="left" class="valueentry">3</td><td align="left" class="keyentry"><a class="url" href="http://www.google.com/search?q=funky+si+foster">funky si foster (page 1)</a></td></tr>
+<tr><td align="left" class="keyentry">2)<td align="left" class="valueentry">2</td><td align="left" class="keyentry"><a class="url" href="http://www.google.com/search?q=prayer4work">prayer4work (page 1)</a></td></tr>
+<tr><td align="left" class="keyentry">3)<td align="left" class="valueentry">1</td><td align="left" class="keyentry"><a class="url" href="http://www.google.com/search?q=first+contact+%22you+mean+you+don%27t+get+paid">first contact &#34;you mean you don&#39;t get paid (page 1)</a></td></tr>
+<tr><td align="left" class="keyentry">4)<td align="left" class="valueentry">1</td><td align="left" class="keyentry"><a class="url" href="http://www.google.com/search?q=arnold+%26+district+camera+club">arnold &amp; district camera club (page 1)</a></td></tr>
+<tr><td align="left" class="keyentry">5)<td align="left" class="valueentry">1</td><td align="left" class="keyentry"><a class="url" href="http://www.google.com/search?q=%22off+by+saying%2c+thank+you+for+supplying+me+using+the+information+i%e2%80%99ve+%22">&#34;off by saying, thank you for supplying me using the information i’ve &#34; (page 16)</a></td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="Google Keyphrases by first time"></a>Google Keyphrases by first time</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">Keyphrases ordered by first time date, newer on top</td></tr>
+<tr><td align="left" colspan="3" class="info">Different referers 5</td></tr>
+<tr><td align="left" class="keyentry">1)<td align="left" class="valueentry">22/Dec/2010</td><td align="left" class="keyentry">&#34;off by saying, thank you for supplying me using the information i’ve &#34; (page 16)</td></tr>
+<tr><td align="left" class="keyentry">2)<td align="left" class="valueentry">21/Dec/2010</td><td align="left" class="keyentry">first contact &#34;you mean you don&#39;t get paid (page 1)</td></tr>
+<tr><td align="left" class="keyentry">3)<td align="left" class="valueentry">16/Dec/2010</td><td align="left" class="keyentry">prayer4work (page 1)</td></tr>
+<tr><td align="left" class="keyentry">4)<td align="left" class="valueentry">13/Dec/2010</td><td align="left" class="keyentry">arnold &amp; district camera club (page 1)</td></tr>
+<tr><td align="left" class="keyentry">5)<td align="left" class="valueentry">12/Dec/2010</td><td align="left" class="keyentry">funky si foster (page 1)</td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="Google Human Language"></a>Google Human Language</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">The &#39;hl&#39; field in the query string of google searches</td></tr>
+<tr><td align="left" colspan="3" class="info">Different human languages 2</td></tr>
+<tr><td align="left" class="keyentry">1)<td align="left" class="valueentry">7</td><td align="left" class="keyentry">en</td></tr>
+<tr><td align="left" class="keyentry">2)<td align="left" class="valueentry">1</td><td align="left" class="keyentry">tr</td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="Weekdays distribution"></a>Weekdays distribution</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">Percentage of hits in every day of the week</td></tr>
+<tr><td align="left" class="keyentry">Mo&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">95 (16.3%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="89%">&nbsp;</td>
+<td align="center" class="barempty" width="11%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">Tu&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">93 (15.9%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="87%">&nbsp;</td>
+<td align="center" class="barempty" width="13%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">We&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">106 (18.2%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="100%">&nbsp;</td>
+<td align="center" class="barempty" width="0%"></td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">Th&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">93 (15.9%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="87%">&nbsp;</td>
+<td align="center" class="barempty" width="13%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">Fr&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">42 (7.2%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="39%">&nbsp;</td>
+<td align="center" class="barempty" width="61%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">Sa&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">49 (8.4%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="46%">&nbsp;</td>
+<td align="center" class="barempty" width="54%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">Su&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">106 (18.2%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="100%">&nbsp;</td>
+<td align="center" class="barempty" width="0%"></td></tr>
+</table>
+</td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td align="center" class="title" colspan="3"><a name="Hours distribution"></a>Hours distribution</td></tr>
+<tr><td align="center" class="subtitle" colspan="3">Percentage of hits in every hour of the day</td></tr>
+<tr><td align="left" class="keyentry">00&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">52 (8.9%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="94%">&nbsp;</td>
+<td align="center" class="barempty" width="6%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">01&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">55 (9.4%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="100%">&nbsp;</td>
+<td align="center" class="barempty" width="0%"></td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">02&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">38 (6.5%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="69%">&nbsp;</td>
+<td align="center" class="barempty" width="31%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">03&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">27 (4.6%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="49%">&nbsp;</td>
+<td align="center" class="barempty" width="51%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">04&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">11 (1.9%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="20%">&nbsp;</td>
+<td align="center" class="barempty" width="80%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">05&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">27 (4.6%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="49%">&nbsp;</td>
+<td align="center" class="barempty" width="51%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">06&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">22 (3.8%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="40%">&nbsp;</td>
+<td align="center" class="barempty" width="60%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">07&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">39 (6.7%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="70%">&nbsp;</td>
+<td align="center" class="barempty" width="30%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">08&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">27 (4.6%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="49%">&nbsp;</td>
+<td align="center" class="barempty" width="51%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">09&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">31 (5.3%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="56%">&nbsp;</td>
+<td align="center" class="barempty" width="44%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">10&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">22 (3.8%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="40%">&nbsp;</td>
+<td align="center" class="barempty" width="60%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">11&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">12 (2.1%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="21%">&nbsp;</td>
+<td align="center" class="barempty" width="79%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">12&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">26 (4.5%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="47%">&nbsp;</td>
+<td align="center" class="barempty" width="53%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">13&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">28 (4.8%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="50%">&nbsp;</td>
+<td align="center" class="barempty" width="50%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">14&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">18 (3.1%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="32%">&nbsp;</td>
+<td align="center" class="barempty" width="68%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">15&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">12 (2.1%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="21%">&nbsp;</td>
+<td align="center" class="barempty" width="79%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">16&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">8 (1.4%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="14%">&nbsp;</td>
+<td align="center" class="barempty" width="86%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">17&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">11 (1.9%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="20%">&nbsp;</td>
+<td align="center" class="barempty" width="80%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">18&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">16 (2.7%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="29%">&nbsp;</td>
+<td align="center" class="barempty" width="71%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">19&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">15 (2.6%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="27%">&nbsp;</td>
+<td align="center" class="barempty" width="73%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">20&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">33 (5.7%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="60%">&nbsp;</td>
+<td align="center" class="barempty" width="40%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">21&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">23 (3.9%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="41%">&nbsp;</td>
+<td align="center" class="barempty" width="59%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">22&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">19 (3.3%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="34%">&nbsp;</td>
+<td align="center" class="barempty" width="66%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td align="left" class="keyentry">23&nbsp;&nbsp;&nbsp;</td><td align="left" class="valueentry">12 (2.1%)</td><td align="left" class="bar"><table cellpadding="0" cellspacing="0" width="400" border="0">
+<tr><td align="center" class="barfill" width="21%">&nbsp;</td>
+<td align="center" class="barempty" width="79%">&nbsp;</td></tr>
+</table>
+</td></tr>
+<tr><td colspan="3">&nbsp;</td></tr><tr><td colspan="3" align="center" class="credits">Statistics generated with <a href="http://www.hping.org/visitors">VISITORS Web Log Analyzer</a> version 0.7
+</td></tr><tr><td colspan="3">&nbsp;</td></tr></table></body></html>
